@@ -7,17 +7,20 @@ class SearchResult extends Component {
 
         const searchHits = moviesList.total > 0 && (
             <div className='search-result'>
-                {moviesList.data.map(movie => {
-                    return (
-                        <MovieCard
-                            key={movie.id}
-                            date={movie.release_date.split('-')[0]}
-                            genre={movie.genres[0]}
-                            title={movie.title}
-                            poster={movie.poster_path}
-                        />
-                    );
-                })}
+                <div className='row'>
+                    {moviesList.data.map(movie => {
+                        return (
+                            <div className='col-4' key={movie.id}>
+                                <MovieCard
+                                    date={movie.release_date.split('-')[0]}
+                                    genre={movie.genres[0]}
+                                    title={movie.title}
+                                    poster={movie.poster_path}
+                                />
+                            </div>
+                        );
+                    })}
+                </div>
             </div>
         );
 

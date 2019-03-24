@@ -3,3 +3,34 @@ body {
     font-family: sans-serif;
     margin: 0;
 }
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.col {
+    flex-basis: 0;
+    flex-grow: 1;
+    max-width: 100%;
+}
+
+.col-4,
+.col-8 {
+    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.col-4 {
+    flex: 0 0 30%;
+    max-width: 30%;
+}
+
+.col-8 {
+    flex: 0 0 60%;
+    max-width: 60%;
+}

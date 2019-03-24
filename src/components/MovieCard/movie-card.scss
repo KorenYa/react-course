@@ -1,27 +1,33 @@
 @import '../../styles/constants.scss';
 
-.movie-card {
+.movie-details {
     display: inline-block;
-    width: 29%;
     padding: 20px;
-    color: $black;
+    color: $white;
 
     &__title {
-        font-size: $md;
-        padding-top: 10px;
+        font-size: $lg;
+        font-weight: $bold;
+        color: $red;
+        padding-bottom: 10px;
         text-transform: uppercase;
     }
 
-    &__date {
-        font-size: $sm;
-        float: right;
-        padding: 4px 6px;
-        border: 1px solid $black;
-        border-radius: 2px;
+    &__tagline {
+        font-size: $md;
+        font-weight: $thin;
+        padding: 10px 0;
     }
 
-    &__genre {
-        font-size: $sm;
-        padding-top: 15px;
+    &__date,
+    &__runtime {
+        font-weight: $bold;
+        padding-right: 15px;
+    }
+
+    &__overview {
+        font-size: $md;
+        font-weight: $thin;
+        padding-top: 20px;
     }
 }

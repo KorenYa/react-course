@@ -3,6 +3,7 @@ import ErrorBoundary from './components/ErrorBoundary';
 import SearchForm from './components/SearchForm';
 import StatusBar from './components/StatusBar';
 import SearchResult from './components/SearchResult';
+import MovieDetails from './components/MovieDetails';
 
 import './styles/general.scss';
 
@@ -40,6 +41,9 @@ class App extends Component {
                 />
                 <StatusBar moviesList={this.state.moviesList} />
                 <SearchResult moviesList={this.state.moviesList} />
+                {this.state.moviesList.data && (
+                    <MovieDetails movie={this.state.moviesList.data[0]} />
+                ) /*will be moved in separate route*/}
             </ErrorBoundary>
         );
     }
