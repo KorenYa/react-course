@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import ErrorBoundary from './components/ErrorBoundary';
 import SearchForm from './components/SearchForm';
 import MovieCard from './components/MovieCard';
 import './styles/general.scss';
@@ -29,14 +30,14 @@ class App extends Component {
 
     render() {
         return (
-            <React.Fragment>
+            <ErrorBoundary>
                 <SearchForm
                     inputValue={this.state.inputValue}
                     handleChange={this.handleChange}
                     handleSubmit={this.handleSubmit}
                 />
                 <MovieCard />
-            </React.Fragment>
+            </ErrorBoundary>
         );
     }
 }
