@@ -1,13 +1,15 @@
 import React, { Component } from 'react';
 import ErrorBoundary from './components/ErrorBoundary';
 import SearchForm from './components/SearchForm';
-import MovieCard from './components/MovieCard';
+import StatusBar from './components/StatusBar';
+import SearchResult from './components/SearchResult';
+
 import './styles/general.scss';
 
 class App extends Component {
     constructor(props) {
         super(props);
-        this.state = { inputValue: 'Hobbit' };
+        this.state = { inputValue: 'Narnia', moviesList: { total: 0 } };
 
         this.handleSubmit = this.handleSubmit.bind(this);
         this.handleChange = this.handleChange.bind(this);
@@ -25,7 +27,7 @@ class App extends Component {
                 '&searchBy=title'
         )
             .then(response => response.json())
-            .then(data => this.setState({ moviesList }));
+            .then(moviesList => this.setState({ moviesList }));
     }
 
     render() {
@@ -36,7 +38,8 @@ class App extends Component {
                     handleChange={this.handleChange}
                     handleSubmit={this.handleSubmit}
                 />
-                <MovieCard />
+                <StatusBar moviesList={this.state.moviesList} />
+                <SearchResult moviesList={this.state.moviesList} />
             </ErrorBoundary>
         );
     }

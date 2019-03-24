@@ -1,0 +1,27 @@
+@import '../../styles/constants.scss';
+
+.movie-card {
+    display: inline-block;
+    width: 29%;
+    padding: 20px;
+    color: $black;
+
+    &__title {
+        font-size: $md;
+        padding-top: 10px;
+        text-transform: uppercase;
+    }
+
+    &__date {
+        font-size: $sm;
+        float: right;
+        padding: 4px 6px;
+        border: 1px solid $black;
+        border-radius: 2px;
+    }
+
+    &__genre {
+        font-size: $sm;
+        padding-top: 15px;
+    }
+}
