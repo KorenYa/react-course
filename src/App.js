@@ -1,15 +1,10 @@
 import React, { Component } from 'react';
-import Title from './components/Title';
-import Button from './components/Button';
+import SearchForm from './components/SearchForm';
+import './styles/general.scss';
+
 class App extends Component {
     render() {
-        return React.createElement(
-            'div',
-            null,
-            'netflixroulette',
-            <Title />,
-            <Button />
-        );
+        return <SearchForm />;
     }
 }
 export default App;

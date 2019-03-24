@@ -1,0 +1,32 @@
+@import '../../styles/constants.scss';
+
+.btn {
+    display: inline-block;
+    font-weight: $bold;
+    color: $white;
+    text-align: center;
+    text-transform: uppercase;
+    vertical-align: middle;
+    user-select: none;
+    background-color: $red;
+    font-size: $sm;
+    padding: 4px 12px;
+    line-height: 1.5;
+    border-radius: 2px;
+    border: none;
+    margin-left: 10px;
+
+    &-lg {
+        font-size: $md;
+        padding: 8px 24px;
+    }
+
+    &:hover {
+        cursor: pointer;
+    }
+
+    &:hover,
+    &.pushed {
+        background-color: $grey;
+    }
+}
