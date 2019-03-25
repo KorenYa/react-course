@@ -1,21 +1,19 @@
-import React, { Component } from 'react';
+import React from 'react';
 import Image from '../Image';
 
 import './movie-card.scss';
-class MovieCard extends Component {
-    render() {
-        return (
-            <div className='movie-card'>
-                <div className='text-center'>
-                    <Image src={this.props.poster} alt={this.props.title} />
-                </div>
-                <h2 className='movie-card__title'>
-                    {this.props.title}
-                    <span className='movie-card__date'>{this.props.date}</span>
-                </h2>
-                <div className='movie-card__genre'>{this.props.genre}</div>
+const MovieCard = function(props) {
+    return (
+        <div className='movie-card'>
+            <div className='text-center'>
+                <Image src={props.poster} alt={props.title} />
             </div>
-        );
-    }
-}
+            <h2 className='movie-card__title'>
+                {props.title}
+                <span className='movie-card__date'>{props.date}</span>
+            </h2>
+            <div className='movie-card__genre'>{props.genre}</div>
+        </div>
+    );
+};
 export default MovieCard;

@@ -1,8 +1,6 @@
-import React, { PureComponent } from 'react';
+import React from 'react';
 import './title.scss';
-class Title extends PureComponent {
-    render() {
-        return <h1 className='title'>{this.props.title}</h1>;
-    }
-}
+const Title = function(props) {
+    return <h1 className='title'>{props.title}</h1>;
+};
 export default Title;
