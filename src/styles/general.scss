@@ -4,6 +4,12 @@ body {
     margin: 0;
 }
 
+.row,
+.col-4,
+.col-8 {
+    box-sizing: border-box;
+}
+
 .row {
     display: flex;
     flex-wrap: wrap;
@@ -11,14 +17,10 @@ body {
     margin-left: -15px;
 }
 
-.col {
-    flex-basis: 0;
-    flex-grow: 1;
-    max-width: 100%;
-}
-
 .col-4,
 .col-8 {
+    flex-basis: 0;
+    flex-grow: 1;
     position: relative;
     width: 100%;
     padding-right: 15px;
@@ -26,11 +28,15 @@ body {
 }
 
 .col-4 {
-    flex: 0 0 30%;
-    max-width: 30%;
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%;
 }
 
 .col-8 {
-    flex: 0 0 60%;
-    max-width: 60%;
+    flex: 0 0 66.666667%;
+    max-width: 66.666667%;
+}
+
+.text-center {
+    text-align: center;
 }

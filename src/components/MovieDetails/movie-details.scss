@@ -3,4 +3,31 @@
 .movie-details {
     padding: 60px 20px;
     background: url('../../../src/img/bg.jpg') center center;
+    color: $white;
+
+    &__title {
+        font-size: $lg;
+        font-weight: $bold;
+        color: $red;
+        padding-bottom: 10px;
+        text-transform: uppercase;
+    }
+
+    &__tagline {
+        font-size: $md;
+        font-weight: $thin;
+        padding: 10px 0;
+    }
+
+    &__date,
+    &__runtime {
+        font-weight: $bold;
+        padding-right: 15px;
+    }
+
+    &__overview {
+        font-size: $md;
+        font-weight: $thin;
+        padding-top: 20px;
+    }
 }

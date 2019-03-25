@@ -6,7 +6,9 @@ class MovieCard extends Component {
     render() {
         return (
             <div className='movie-card'>
-                <Image src={this.props.poster} alt={this.props.title} />
+                <div className='text-center'>
+                    <Image src={this.props.poster} alt={this.props.title} />
+                </div>
                 <h2 className='movie-card__title'>
                     {this.props.title}
                     <span className='movie-card__date'>{this.props.date}</span>
