@@ -10,10 +10,15 @@ import './styles/general.scss';
 class App extends Component {
     constructor(props) {
         super(props);
-        this.state = { inputValue: 'Narnia', moviesList: { total: 0 } };
+        this.state = {
+            inputValue: 'Adventure',
+            moviesList: { total: 0 },
+            searchBy: 'genre'
+        };
 
         this.handleSubmit = this.handleSubmit.bind(this);
         this.handleChange = this.handleChange.bind(this);
+        this.handleFilter = this.handleFilter.bind(this);
     }
 
     handleChange(event) {
@@ -25,10 +30,16 @@ class App extends Component {
         fetch(
             'http://react-cdp-api.herokuapp.com/movies?search=' +
                 this.state.inputValue +
-                '&searchBy=title'
+                '&searchBy=' +
+                this.state.searchBy
         )
             .then(response => response.json())
             .then(moviesList => this.setState({ moviesList }));
+    }
+
+    handleFilter(event, searchBy) {
+        event.preventDefault();
+        this.setState({ searchBy: searchBy });
     }
 
     render() {
@@ -38,6 +49,8 @@ class App extends Component {
                     inputValue={this.state.inputValue}
                     handleChange={this.handleChange}
                     handleSubmit={this.handleSubmit}
+                    searchBy={this.state.searchBy}
+                    handleFilter={this.handleFilter}
                 />
                 <StatusBar moviesList={this.state.moviesList} />
                 <SearchResult moviesList={this.state.moviesList} />

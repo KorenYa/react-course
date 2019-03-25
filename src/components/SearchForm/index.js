@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Title from '../Title';
 import Input from '../Input';
 import Button from '../Button';
+import noop from '../../utils/noop';
 import './search-from.scss';
 class SearchForm extends Component {
     constructor(props) {
@@ -9,6 +10,7 @@ class SearchForm extends Component {
 
         this.handleSubmit = this.handleSubmit.bind(this);
         this.handleChange = this.handleChange.bind(this);
+        this.handleFilter = this.handleFilter.bind(this);
     }
 
     handleChange(event) {
@@ -17,6 +19,10 @@ class SearchForm extends Component {
 
     handleSubmit(event) {
         this.props.handleSubmit(event);
+    }
+
+    handleFilter(event, searchBy) {
+        this.props.handleFilter(event, searchBy);
     }
 
     render() {
@@ -30,13 +36,30 @@ class SearchForm extends Component {
                 />
                 <div className='search-form__btn-wrapper'>
                     <span className='search-form__subtitle'>Search by</span>
-                    <Button text={'Title'} />
-                    <Button text={'Genre'} />
+                    <Button
+                        type='button'
+                        text='Title'
+                        searchBy='title'
+                        onClick={this.props.handleFilter}
+                        styleName={
+                            this.props.searchBy == 'title' ? 'active' : ''
+                        }
+                    />
+                    <Button
+                        type='button'
+                        text='Genre'
+                        searchBy='genre'
+                        onClick={this.props.handleFilter}
+                        styleName={
+                            this.props.searchBy == 'genre' ? 'active' : ''
+                        }
+                    />
                     <Button
                         type='submit'
                         text={'Search'}
                         styleName='btn-lg'
                         style={{ alignSelf: 'flex-end' }}
+                        onClick={noop}
                     />
                 </div>
             </form>
