@@ -1,6 +1,6 @@
 import React from 'react';
 import Image from '../Image';
-
+import PropTypes from 'prop-types';
 import './movie-card.scss';
 const MovieCard = function(props) {
     return (
@@ -15,5 +15,11 @@ const MovieCard = function(props) {
             <div className='movie-card__genre'>{props.genre}</div>
         </div>
     );
+};
+MovieCard.propTypes = {
+    poster: PropTypes.string,
+    title: PropTypes.string,
+    date: PropTypes.string,
+    genre: PropTypes.string
 };
 export default MovieCard;

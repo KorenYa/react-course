@@ -1,18 +1,17 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
 
-import Button from '../Button';
+import MovieCard from '../MovieCard';
 
-describe('Button', () => {
+describe('MovieCard', () => {
     it('renders correctly', () => {
         const tree = renderer
             .create(
-                <Button
-                    type='button'
-                    text='click me'
-                    seachBy='genre'
-                    styleName='btn-lg'
-                    onClick='() => {}'
+                <MovieCard
+                    poster='poster.jpg'
+                    title='Movie'
+                    date='27-03-2019'
+                    genre='action'
                 />
             )
             .toJSON();

@@ -52,7 +52,7 @@ class App extends Component {
                     searchBy={this.state.searchBy}
                     handleFilter={this.handleFilter}
                 />
-                <StatusBar moviesList={this.state.moviesList} />
+                <StatusBar total={this.state.moviesList.total} />
                 <SearchResult moviesList={this.state.moviesList} />
                 {this.state.moviesList.data && (
                     <MovieDetails movie={this.state.moviesList.data[0]} />
