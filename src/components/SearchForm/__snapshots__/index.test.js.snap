@@ -3,7 +3,7 @@
 exports[`SearchForm renders correctly 1`] = `
 <form
   className="search-form"
-  onSubmit="() => {}"
+  onSubmit={[MockFunction]}
 >
   <div
     className="search-form__title"
@@ -17,7 +17,7 @@ exports[`SearchForm renders correctly 1`] = `
   </h1>
   <input
     className="input"
-    onChange="() => {}"
+    onChange={[MockFunction]}
     type="text"
     value="Narnia"
   />

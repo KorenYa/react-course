@@ -12,7 +12,7 @@ describe('Button', () => {
                     text='click me'
                     seachBy='genre'
                     styleName='btn-lg'
-                    onClick='() => {}'
+                    onClick={jest.fn()}
                 />
             )
             .toJSON();

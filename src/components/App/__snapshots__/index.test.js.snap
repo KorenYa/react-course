@@ -1,0 +1,69 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`App component App: renders correctly 1`] = `
+Array [
+  <form
+    className="search-form"
+    onSubmit={[Function]}
+  >
+    <div
+      className="search-form__title"
+    >
+      netflixroulette
+    </div>
+    <h1
+      className="title"
+    >
+      find your movie
+    </h1>
+    <input
+      className="input"
+      onChange={[Function]}
+      type="text"
+      value="Adventure"
+    />
+    <div
+      className="search-form__btn-wrapper"
+    >
+      <span
+        className="search-form__subtitle"
+      >
+        Search by
+      </span>
+      <button
+        className="btn "
+        onClick={[Function]}
+        type="button"
+      >
+        Title
+      </button>
+      <button
+        className="btn active"
+        onClick={[Function]}
+        type="button"
+      >
+        Genre
+      </button>
+      <button
+        className="btn btn-lg"
+        onClick={[Function]}
+        type="submit"
+      >
+        Search
+      </button>
+    </div>
+  </form>,
+  <div
+    className="status-bar"
+  >
+    <span>
+       
+    </span>
+  </div>,
+  <div
+    className="search-result__no-hits"
+  >
+    No films found
+  </div>,
+]
+`;

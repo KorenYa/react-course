@@ -8,9 +8,9 @@ describe('SearchForm', () => {
         const tree = renderer
             .create(
                 <SearchForm
-                    handleSubmit='() => {}'
-                    handleChange='() => {}'
-                    handleFilter='() => {}'
+                    handleSubmit={jest.fn()}
+                    handleChange={jest.fn()}
+                    handleFilter={jest.fn()}
                     inputValue='Narnia'
                     searchBy='title'
                 />

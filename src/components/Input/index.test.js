@@ -6,7 +6,7 @@ import Input from '../Input';
 describe('Input', () => {
     it('renders correctly', () => {
         const tree = renderer
-            .create(<Input value='Type to search' onChange='() => {}' />)
+            .create(<Input value='Type to search' onChange={jest.fn()} />)
             .toJSON();
 
         expect(tree).toMatchSnapshot();
