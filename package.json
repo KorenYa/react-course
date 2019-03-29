@@ -14,7 +14,8 @@
   "scripts": {
     "start": "webpack-dev-server --open --mode development",
     "build": "webpack --mode production",
-    "test": "jest /src"
+    "test": "jest /src",
+    "e2e": "cypress open"
   },
   "browserslist": [
     ">0.2%",
@@ -30,6 +31,7 @@
     "babel-loader": "^8.0.5",
     "babel-polyfill": "^6.26.0",
     "css-loader": "^2.1.1",
+    "cypress": "^3.2.0",
     "enzyme": "^3.9.0",
     "enzyme-adapter-react-16": "^1.11.2",
     "enzyme-react-16-adapter-setup": "^0.1.0",

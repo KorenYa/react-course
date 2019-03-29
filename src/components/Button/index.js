@@ -7,6 +7,7 @@ const Button = function(props) {
             onClick={() => props.onClick(event, props.searchBy)}
             className={`btn ${props.styleName}`}
             type={props.type || ''}
+            data-searchby={props.searchBy}
         >
             {props.text}
         </button>

@@ -32,6 +32,7 @@ Array [
       </span>
       <button
         className="btn "
+        data-searchby="title"
         onClick={[Function]}
         type="button"
       >
@@ -39,6 +40,7 @@ Array [
       </button>
       <button
         className="btn active"
+        data-searchby="genre"
         onClick={[Function]}
         type="button"
       >

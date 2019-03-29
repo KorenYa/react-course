@@ -31,6 +31,7 @@ exports[`SearchForm renders correctly 1`] = `
     </span>
     <button
       className="btn active"
+      data-searchby="title"
       onClick={[Function]}
       type="button"
     >
@@ -38,6 +39,7 @@ exports[`SearchForm renders correctly 1`] = `
     </button>
     <button
       className="btn "
+      data-searchby="genre"
       onClick={[Function]}
       type="button"
     >
