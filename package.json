@@ -15,7 +15,8 @@
     "start": "webpack-dev-server --open --mode development",
     "build": "webpack --mode production",
     "test": "jest /src",
-    "e2e": "cypress open"
+    "test:coverage": "jest /src --collect-coverage",
+    "test:e2e": "cypress open"
   },
   "browserslist": [
     ">0.2%",
