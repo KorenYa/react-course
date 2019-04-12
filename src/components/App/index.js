@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
-import ErrorBoundary from './components/ErrorBoundary';
-import SearchForm from './components/SearchForm';
-import StatusBar from './components/StatusBar';
-import SearchResult from './components/SearchResult';
-import MovieDetails from './components/MovieDetails';
+import ErrorBoundary from '../ErrorBoundary';
+import SearchForm from '../SearchForm';
+import StatusBar from '../StatusBar';
+import SearchResult from '../SearchResult';
+import MovieDetails from '../MovieDetails';
+import fetch from 'isomorphic-fetch';
 
-import './styles/general.scss';
+import '../../styles/general.scss';
 
 class App extends Component {
     constructor(props) {
@@ -21,13 +22,9 @@ class App extends Component {
         this.handleFilter = this.handleFilter.bind(this);
     }
 
-    handleChange(event) {
-        this.setState({ inputValue: event.target.value });
-    }
-
     handleSubmit(event) {
         event.preventDefault();
-        fetch(
+        return fetch(
             'http://react-cdp-api.herokuapp.com/movies?search=' +
                 this.state.inputValue +
                 '&searchBy=' +
@@ -35,6 +32,10 @@ class App extends Component {
         )
             .then(response => response.json())
             .then(moviesList => this.setState({ moviesList }));
+    }
+
+    handleChange(event) {
+        this.setState({ inputValue: event.target.value });
     }
 
     handleFilter(event, searchBy) {
@@ -52,7 +53,7 @@ class App extends Component {
                     searchBy={this.state.searchBy}
                     handleFilter={this.handleFilter}
                 />
-                <StatusBar moviesList={this.state.moviesList} />
+                <StatusBar total={this.state.moviesList.total} />
                 <SearchResult moviesList={this.state.moviesList} />
                 {this.state.moviesList.data && (
                     <MovieDetails movie={this.state.moviesList.data[0]} />

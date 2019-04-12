@@ -1,25 +1,18 @@
-import React, { PureComponent } from 'react';
+import React from 'react';
+import PropTypes from 'prop-types';
 import './input.scss';
-class Input extends PureComponent {
-    constructor(props) {
-        super(props);
-
-        this.handleChange = this.handleChange.bind(this);
-    }
-
-    handleChange(event) {
-        this.props.handleChange(event);
-    }
-
-    render() {
-        return (
-            <input
-                className='input'
-                type='text'
-                value={this.props.value}
-                onChange={this.handleChange}
-            />
-        );
-    }
-}
+const Input = function(props) {
+    return (
+        <input
+            className='input'
+            type='text'
+            value={props.value}
+            onChange={props.handleChange}
+        />
+    );
+};
+Input.propTypes = {
+    value: PropTypes.string,
+    onChange: PropTypes.func
+};
 export default Input;

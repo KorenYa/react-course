@@ -1,0 +1,32 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`MovieCard renders correctly 1`] = `
+<div
+  className="movie-card"
+>
+  <div
+    className="text-center"
+  >
+    <img
+      alt="Movie"
+      className="img-responsive"
+      src="poster.jpg"
+    />
+  </div>
+  <h2
+    className="movie-card__title"
+  >
+    Movie
+    <span
+      className="movie-card__date"
+    >
+      27-03-2019
+    </span>
+  </h2>
+  <div
+    className="movie-card__genre"
+  >
+    action
+  </div>
+</div>
+`;

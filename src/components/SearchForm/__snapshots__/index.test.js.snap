@@ -1,0 +1,57 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SearchForm renders correctly 1`] = `
+<form
+  className="search-form"
+  onSubmit={[MockFunction]}
+>
+  <div
+    className="search-form__title"
+  >
+    netflixroulette
+  </div>
+  <h1
+    className="title"
+  >
+    find your movie
+  </h1>
+  <input
+    className="input"
+    onChange={[MockFunction]}
+    type="text"
+    value="Narnia"
+  />
+  <div
+    className="search-form__btn-wrapper"
+  >
+    <span
+      className="search-form__subtitle"
+    >
+      Search by
+    </span>
+    <button
+      className="btn active"
+      data-searchby="title"
+      onClick={[Function]}
+      type="button"
+    >
+      Title
+    </button>
+    <button
+      className="btn "
+      data-searchby="genre"
+      onClick={[Function]}
+      type="button"
+    >
+      Genre
+    </button>
+    <button
+      className="btn btn-lg"
+      onClick={[Function]}
+      type="submit"
+    >
+      Search
+    </button>
+  </div>
+</form>
+`;

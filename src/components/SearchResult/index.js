@@ -1,5 +1,6 @@
 import React from 'react';
 import MovieCard from '../MovieCard';
+import PropTypes from 'prop-types';
 import './search-result.scss';
 const SearchResult = function(props) {
     const moviesList = props.moviesList;
@@ -26,5 +27,11 @@ const SearchResult = function(props) {
     const noHits = <div className='search-result__no-hits'>No films found</div>;
 
     return moviesList.total > 0 ? searchHits : noHits;
+};
+SearchResult.propTypes = {
+    moviesList: PropTypes.shape({
+        data: PropTypes.array,
+        total: PropTypes.number
+    })
 };
 export default SearchResult;

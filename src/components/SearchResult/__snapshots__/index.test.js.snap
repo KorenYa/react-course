@@ -1,0 +1,108 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SearchResult renders correctly 1`] = `
+<div
+  className="search-result"
+>
+  <div
+    className="row"
+  >
+    <div
+      className="col-4"
+    >
+      <div
+        className="movie-card"
+      >
+        <div
+          className="text-center"
+        >
+          <img
+            alt="The Gold Rush"
+            className="img-responsive"
+            src="https://image.tmdb.org/t/p/w500/eQRFo1qwRREYwj47Yoe1PisgOle.jpg"
+          />
+        </div>
+        <h2
+          className="movie-card__title"
+        >
+          The Gold Rush
+          <span
+            className="movie-card__date"
+          >
+            1925
+          </span>
+        </h2>
+        <div
+          className="movie-card__genre"
+        >
+          Adventure
+        </div>
+      </div>
+    </div>
+    <div
+      className="col-4"
+    >
+      <div
+        className="movie-card"
+      >
+        <div
+          className="text-center"
+        >
+          <img
+            alt="Metropolis"
+            className="img-responsive"
+            src="https://image.tmdb.org/t/p/w500/qriaeUUwdmlgethK3aSAx68mG05.jpg"
+          />
+        </div>
+        <h2
+          className="movie-card__title"
+        >
+          Metropolis
+          <span
+            className="movie-card__date"
+          >
+            1927
+          </span>
+        </h2>
+        <div
+          className="movie-card__genre"
+        >
+          Drama
+        </div>
+      </div>
+    </div>
+    <div
+      className="col-4"
+    >
+      <div
+        className="movie-card"
+      >
+        <div
+          className="text-center"
+        >
+          <img
+            alt="All Quiet on the Western Front"
+            className="img-responsive"
+            src="https://image.tmdb.org/t/p/w500/9gn5ce3B2vOpk9pOGeUjmFecIo5.jpg"
+          />
+        </div>
+        <h2
+          className="movie-card__title"
+        >
+          All Quiet on the Western Front
+          <span
+            className="movie-card__date"
+          >
+            1930
+          </span>
+        </h2>
+        <div
+          className="movie-card__genre"
+        >
+          Drama
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

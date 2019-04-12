@@ -1,0 +1,29 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`StatusBar renders correctly 1`] = `
+<div
+  className="status-bar"
+>
+  <div>
+    3
+     movies found
+    <div
+      className="status-bar__filters"
+    >
+      <span>
+        Sort by
+      </span>
+      <span
+        className="status-bar__sort"
+      >
+        release date
+      </span>
+      <span
+        className="status-bar__sort"
+      >
+        rating
+      </span>
+    </div>
+  </div>
+</div>
+`;

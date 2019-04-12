@@ -1,6 +1,6 @@
 import React from 'react';
 import Image from '../Image';
-
+import PropTypes from 'prop-types';
 import './movie-details.scss';
 const MovieDetails = function(props) {
     const movie = props.movie;
@@ -28,5 +28,15 @@ const MovieDetails = function(props) {
             </div>
         </div>
     );
+};
+MovieDetails.propTypes = {
+    movie: PropTypes.shape({
+        poster_path: PropTypes.string,
+        title: PropTypes.string,
+        tagline: PropTypes.string,
+        release_date: PropTypes.string,
+        runtime: PropTypes.number,
+        overview: PropTypes.string
+    })
 };
 export default MovieDetails;
