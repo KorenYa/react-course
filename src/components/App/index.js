@@ -61,7 +61,7 @@ export class App extends Component {
                     handleSortBy={this.handleSortBy}
                 />
                 <SearchResult moviesList={moviesList} />
-                {moviesList.data && (
+                {moviesList.total > 0 && (
                     <MovieDetails movie={moviesList.data[0]} />
                 ) /*will be moved in separate route*/}
             </ErrorBoundary>
