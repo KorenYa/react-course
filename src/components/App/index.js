@@ -14,7 +14,7 @@ import {
 
 import '../../styles/general.scss';
 
-class App extends Component {
+export class App extends Component {
     constructor(props) {
         super(props);
 

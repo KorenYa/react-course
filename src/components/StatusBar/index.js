@@ -10,15 +10,17 @@ const StatusBar = function(props) {
             <div className='status-bar__filters'>
                 <span>Sort by</span>
                 <span
-                    className={`status-bar__sort ${props.sortBy ===
-                        'release_date' && 'active'}`}
+                    className={`status-bar__sort ${
+                        props.sortBy === 'release_date' ? 'active' : ''
+                    }`}
                     onClick={props.handleSortBy.bind(this, 'release_date')}
                 >
                     release date
                 </span>
                 <span
-                    className={`status-bar__sort ${props.sortBy ===
-                        'vote_count' && 'active'}`}
+                    className={`status-bar__sort ${
+                        props.sortBy === 'vote_count' ? 'active' : ''
+                    }`}
                     onClick={props.handleSortBy.bind(this, 'vote_count')}
                 >
                     rating

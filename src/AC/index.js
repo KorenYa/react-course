@@ -14,20 +14,20 @@ export function startMoviesSearch() {
 export function updateSearchQuery(searchQuery) {
     return {
         type: SEARCH_QUERY,
-        searchQuery: searchQuery
+        searchQuery
     };
 }
 
 export function updateSearchBy(searchBy) {
     return {
         type: SEARCH_BY,
-        searchBy: searchBy
+        searchBy
     };
 }
 
 export function updateSortBy(sortBy) {
     return {
         type: SORT_BY,
-        sortBy: sortBy
+        sortBy
     };
 }
