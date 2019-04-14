@@ -6,7 +6,7 @@ const enhancer = applyMiddleware(api);
 const initialState = {
     moviesList: { total: 0 },
     searchQuery: 'Adventure',
-    searchBy: 'genre',
+    searchBy: 'title',
     sortBy: 'release_date'
 };
 const store = createStore(reducer, initialState, enhancer);

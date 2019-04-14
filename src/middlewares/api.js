@@ -7,12 +7,14 @@ export default store => next => action => {
     switch (type) {
         case SEARCH_MOVIES:
             fetch(
-                'http://react-cdp-api.herokuapp.com/movies?search=' +
+                'http://react-cdp-api.herokuapp.com/movies?sortBy=' +
+                    sortBy +
+                    '&sortOrder=' +
+                    'desc' +
+                    '&search=' +
                     searchQuery +
                     '&searchBy=' +
-                    searchBy +
-                    '&sortBy=' +
-                    sortBy
+                    searchBy
             )
                 .then(response => response.json())
                 .then(response => next({ ...action, response }));

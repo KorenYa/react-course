@@ -1,6 +1,6 @@
 import { SEARCH_BY } from '../utils/constants';
 
-export default (defaultSearchBy = 'genre', action) => {
+export default (defaultSearchBy = 'title', action) => {
     const { type, searchBy } = action;
 
     switch (type) {

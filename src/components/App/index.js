@@ -21,6 +21,7 @@ class App extends Component {
         this.handleSubmit = this.handleSubmit.bind(this);
         this.handleChange = this.handleChange.bind(this);
         this.handleFilter = this.handleFilter.bind(this);
+        this.handleSortBy = this.handleSortBy.bind(this);
     }
 
     handleSubmit(event) {
@@ -37,8 +38,13 @@ class App extends Component {
         this.props.updateSearchBy(searchBy);
     }
 
+    handleSortBy(sortBy) {
+        this.props.updateSortBy(sortBy);
+        this.props.startMoviesSearch();
+    }
+
     render() {
-        const { searchQuery, searchBy, moviesList } = this.props;
+        const { searchQuery, searchBy, moviesList, sortBy } = this.props;
 
         return (
             <ErrorBoundary>
@@ -49,7 +55,11 @@ class App extends Component {
                     searchBy={searchBy}
                     handleFilter={this.handleFilter}
                 />
-                <StatusBar total={moviesList.total} />
+                <StatusBar
+                    total={moviesList.total}
+                    sortBy={sortBy}
+                    handleSortBy={this.handleSortBy}
+                />
                 <SearchResult moviesList={moviesList} />
                 {moviesList.data && (
                     <MovieDetails movie={moviesList.data[0]} />

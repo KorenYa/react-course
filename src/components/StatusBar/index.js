@@ -9,8 +9,20 @@ const StatusBar = function(props) {
             {props.total} movies found
             <div className='status-bar__filters'>
                 <span>Sort by</span>
-                <span className='status-bar__sort'>release date</span>
-                <span className='status-bar__sort'>rating</span>
+                <span
+                    className={`status-bar__sort ${props.sortBy ===
+                        'release_date' && 'active'}`}
+                    onClick={props.handleSortBy.bind(this, 'release_date')}
+                >
+                    release date
+                </span>
+                <span
+                    className={`status-bar__sort ${props.sortBy ===
+                        'vote_count' && 'active'}`}
+                    onClick={props.handleSortBy.bind(this, 'vote_count')}
+                >
+                    rating
+                </span>
             </div>
         </div>
     );
@@ -20,6 +32,8 @@ const StatusBar = function(props) {
     );
 };
 StatusBar.propTypes = {
-    total: PropTypes.number
+    total: PropTypes.number,
+    sortBy: PropTypes.string,
+    handleSortBy: PropTypes.func
 };
 export default StatusBar;
