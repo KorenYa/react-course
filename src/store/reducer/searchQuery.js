@@ -1,4 +1,4 @@
-import { SEARCH_QUERY } from '../utils/constants';
+import { SEARCH_QUERY } from '../../utils/constants';
 
 export default (deafultSearchQuery = 'Adventure', action) => {
     const { type, searchQuery } = action;

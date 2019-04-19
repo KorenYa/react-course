@@ -1,4 +1,4 @@
-import { SEARCH_MOVIES } from '../utils/constants';
+import { SEARCH_MOVIES } from '../../utils/constants';
 
 export default store => next => action => {
     const { type } = action;

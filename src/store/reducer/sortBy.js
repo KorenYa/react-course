@@ -1,4 +1,4 @@
-import { SORT_BY } from '../utils/constants';
+import { SORT_BY } from '../../utils/constants';
 
 export default (deafultSortBy = 'release_date', action) => {
     const { type, sortBy } = action;

@@ -1,4 +1,4 @@
-import { SEARCH_BY } from '../utils/constants';
+import { SEARCH_BY } from '../../utils/constants';
 
 export default (defaultSearchBy = 'title', action) => {
     const { type, searchBy } = action;

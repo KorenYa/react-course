@@ -3,7 +3,7 @@ import {
     SEARCH_QUERY,
     SEARCH_BY,
     SORT_BY
-} from '../utils/constants';
+} from '../../utils/constants';
 
 export function startMoviesSearch() {
     return {

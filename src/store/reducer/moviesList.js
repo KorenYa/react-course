@@ -1,4 +1,4 @@
-import { SEARCH_MOVIES } from '../utils/constants';
+import { SEARCH_MOVIES } from '../../utils/constants';
 
 const defaultMoviesList = { total: 0 };
 

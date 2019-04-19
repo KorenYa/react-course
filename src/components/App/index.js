@@ -10,7 +10,7 @@ import {
     updateSearchQuery,
     updateSearchBy,
     updateSortBy
-} from '../../AC';
+} from '../../store/AC';
 
 import '../../styles/general.scss';
 

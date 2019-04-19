@@ -1,4 +1,4 @@
-import * as types from '../utils/constants';
+import * as types from '../../utils/constants';
 import * as actions from '../AC';
 
 describe('actions', () => {
