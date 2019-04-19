@@ -8,7 +8,7 @@
     text-transform: uppercase;
     vertical-align: middle;
     user-select: none;
-    background-color: $red;
+    background-color: $grey;
     font-size: $sm;
     padding: 4px 12px;
     line-height: 1.5;
@@ -27,6 +27,6 @@
 
     &:hover,
     &.active {
-        background-color: $grey;
+        background-color: $red;
     }
 }
