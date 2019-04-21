@@ -27,6 +27,16 @@ export class MovieDetails extends Component {
         browserfilmId !== selectedMovie.id ? getMovieById(browserfilmId) : null;
     }
 
+    componentDidUpdate(prevProps) {
+        const prevFilmId = prevProps.match.params.filmId;
+        const filmId = this.props.match.params.filmId;
+        const { getMovieById } = this.props;
+
+        if (prevFilmId !== filmId) {
+            getMovieById(filmId);
+        }
+    }
+
     render() {
         const { selectedMovie } = this.props;
         const movie = selectedMovie;
