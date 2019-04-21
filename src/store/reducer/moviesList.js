@@ -1,6 +1,6 @@
 import { SEARCH_MOVIES, CLEAR_MOVIES } from '../../utils/constants';
 
-const defaultMoviesList = { total: 0 };
+const defaultMoviesList = { total: 0, data: [] };
 
 export default (moviesList = defaultMoviesList, action) => {
     const { type, response } = action;

@@ -115,7 +115,10 @@ export class App extends Component {
                         path='/search/:browserSearchQuery'
                         render={Homepage}
                     />
-                    <Route path='/film/:id' component={MovieDetails} />
+                    <Route
+                        path='/film/:filmId'
+                        render={props => <MovieDetails {...props} />}
+                    />
                     <Route path='*' component={NotFound} />
                 </Switch>
             </ErrorBoundary>

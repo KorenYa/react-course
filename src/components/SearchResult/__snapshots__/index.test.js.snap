@@ -10,98 +10,113 @@ exports[`SearchResult renders correctly 1`] = `
     <div
       className="col-4"
     >
-      <div
-        className="movie-card"
+      <a
+        href="/film/962"
+        onClick={[Function]}
       >
         <div
-          className="text-center"
+          className="movie-card"
         >
-          <img
-            alt="The Gold Rush"
-            className="img-responsive"
-            src="https://image.tmdb.org/t/p/w500/eQRFo1qwRREYwj47Yoe1PisgOle.jpg"
-          />
-        </div>
-        <h2
-          className="movie-card__title"
-        >
-          The Gold Rush
-          <span
-            className="movie-card__date"
+          <div
+            className="text-center"
           >
-            1925
-          </span>
-        </h2>
-        <div
-          className="movie-card__genre"
-        >
-          Adventure
+            <img
+              alt="The Gold Rush"
+              className="img-responsive"
+              src="https://image.tmdb.org/t/p/w500/eQRFo1qwRREYwj47Yoe1PisgOle.jpg"
+            />
+          </div>
+          <h2
+            className="movie-card__title"
+          >
+            The Gold Rush
+            <span
+              className="movie-card__date"
+            >
+              1925
+            </span>
+          </h2>
+          <div
+            className="movie-card__genre"
+          >
+            Adventure
+          </div>
         </div>
-      </div>
+      </a>
     </div>
     <div
       className="col-4"
     >
-      <div
-        className="movie-card"
+      <a
+        href="/film/19"
+        onClick={[Function]}
       >
         <div
-          className="text-center"
+          className="movie-card"
         >
-          <img
-            alt="Metropolis"
-            className="img-responsive"
-            src="https://image.tmdb.org/t/p/w500/qriaeUUwdmlgethK3aSAx68mG05.jpg"
-          />
-        </div>
-        <h2
-          className="movie-card__title"
-        >
-          Metropolis
-          <span
-            className="movie-card__date"
+          <div
+            className="text-center"
           >
-            1927
-          </span>
-        </h2>
-        <div
-          className="movie-card__genre"
-        >
-          Drama
+            <img
+              alt="Metropolis"
+              className="img-responsive"
+              src="https://image.tmdb.org/t/p/w500/qriaeUUwdmlgethK3aSAx68mG05.jpg"
+            />
+          </div>
+          <h2
+            className="movie-card__title"
+          >
+            Metropolis
+            <span
+              className="movie-card__date"
+            >
+              1927
+            </span>
+          </h2>
+          <div
+            className="movie-card__genre"
+          >
+            Drama
+          </div>
         </div>
-      </div>
+      </a>
     </div>
     <div
       className="col-4"
     >
-      <div
-        className="movie-card"
+      <a
+        href="/film/143"
+        onClick={[Function]}
       >
         <div
-          className="text-center"
+          className="movie-card"
         >
-          <img
-            alt="All Quiet on the Western Front"
-            className="img-responsive"
-            src="https://image.tmdb.org/t/p/w500/9gn5ce3B2vOpk9pOGeUjmFecIo5.jpg"
-          />
-        </div>
-        <h2
-          className="movie-card__title"
-        >
-          All Quiet on the Western Front
-          <span
-            className="movie-card__date"
+          <div
+            className="text-center"
           >
-            1930
-          </span>
-        </h2>
-        <div
-          className="movie-card__genre"
-        >
-          Drama
+            <img
+              alt="All Quiet on the Western Front"
+              className="img-responsive"
+              src="https://image.tmdb.org/t/p/w500/9gn5ce3B2vOpk9pOGeUjmFecIo5.jpg"
+            />
+          </div>
+          <h2
+            className="movie-card__title"
+          >
+            All Quiet on the Western Front
+            <span
+              className="movie-card__date"
+            >
+              1930
+            </span>
+          </h2>
+          <div
+            className="movie-card__genre"
+          >
+            Drama
+          </div>
         </div>
-      </div>
+      </a>
     </div>
   </div>
 </div>

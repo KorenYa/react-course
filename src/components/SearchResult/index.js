@@ -12,6 +12,7 @@ const SearchResult = function(props) {
                     return (
                         <div className='col-4' key={movie.id}>
                             <MovieCard
+                                id={movie.id}
                                 date={movie.release_date.split('-')[0]}
                                 genre={movie.genres[0]}
                                 title={movie.title}

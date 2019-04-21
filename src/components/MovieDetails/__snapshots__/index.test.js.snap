@@ -1,53 +1,80 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`MovieDetails renders correctly 1`] = `
-<div
-  className="movie-details"
->
+Array [
   <div
-    className="row"
+    className="movie-details"
   >
     <div
-      className="col-4"
+      className="row"
     >
-      <img
-        alt="The Gold Rush"
-        className="img-responsive"
-        src="https://image.tmdb.org/t/p/w500/eQRFo1qwRREYwj47Yoe1PisgOle.jpg"
-      />
-    </div>
-    <div
-      className="col-8"
-    >
-      <h2
-        className="movie-details__title"
+      <div
+        className="col-12 text-right"
       >
-        The Gold Rush
-      </h2>
-      <h4
-        className="movie-details__tagline"
-      >
-        The World's Greatest Laughing Picture!
-      </h4>
-      <div>
-        <span
-          className="movie-details__date"
+        <button
+          className="btn btn-lg btn-back"
+          onClick={[Function]}
+          type=""
         >
-          1925
-        </span>
-        <span
-          className="movie-details__runtime"
-        >
-          95
-           min
-        </span>
+          Back to search
+        </button>
       </div>
       <div
-        className="movie-details__overview"
+        className="col-4"
       >
-        A lone prospector ventures into Alaska looking for gold. He gets mixed up with some burly characters and falls in love with the beautiful Georgia. He tries to win her heart with his singular charm.
+        <img
+          alt="The Gold Rush"
+          className="img-responsive"
+          src="https://image.tmdb.org/t/p/w500/eQRFo1qwRREYwj47Yoe1PisgOle.jpg"
+        />
+      </div>
+      <div
+        className="col-8"
+      >
+        <h2
+          className="movie-details__title"
+        >
+          The Gold Rush
+        </h2>
+        <h4
+          className="movie-details__tagline"
+        >
+          The World's Greatest Laughing Picture!
+        </h4>
+        <div>
+          <span
+            className="movie-details__date"
+          >
+            1925
+          </span>
+          <span
+            className="movie-details__runtime"
+          >
+            95
+             min
+          </span>
+        </div>
+        <div
+          className="movie-details__overview"
+        >
+          A lone prospector ventures into Alaska looking for gold. He gets mixed up with some burly characters and falls in love with the beautiful Georgia. He tries to win her heart with his singular charm.
+        </div>
       </div>
     </div>
-  </div>
-</div>
+  </div>,
+  <div
+    className="status-bar"
+  >
+    <span>
+      Films by 
+      adventure
+       genre
+    </span>
+  </div>,
+  <div
+    className="search-result__no-hits"
+  >
+    No films found
+  </div>,
+]
 `;
