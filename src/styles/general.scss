@@ -4,6 +4,16 @@ body {
     margin: 0;
 }
 
+.not-found-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $grey;
+    font-size: $x-lg;
+    font-weight: $bold;
+    height: 100vh;
+}
+
 .row,
 .col-4,
 .col-8 {
