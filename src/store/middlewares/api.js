@@ -37,7 +37,8 @@ export default store => next => action => {
                 .then(response => {
                     combinedResponse.sameGenreMovies = response;
                     return next({ ...action, combinedResponse });
-                });
+                })
+                .catch(error => error);
 
         default:
             next(action);

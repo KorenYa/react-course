@@ -4,6 +4,7 @@ import { connect } from 'react-redux';
 import Image from '../Image';
 import Button from '../Button';
 import SearchResult from '../SearchResult';
+import NotFound from '../NotFound';
 
 import { getMovieById } from '../../store/AC';
 
@@ -82,7 +83,9 @@ export class MovieDetails extends Component {
                 </div>
                 <SearchResult moviesList={sameGenreMovies} />
             </React.Fragment>
-        ) : null;
+        ) : (
+            <NotFound />
+        );
     }
 }
 

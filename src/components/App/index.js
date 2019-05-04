@@ -7,6 +7,7 @@ import SearchForm from '../SearchForm';
 import StatusBar from '../StatusBar';
 import SearchResult from '../SearchResult';
 import MovieDetails from '../MovieDetails';
+import NotFound from '../NotFound';
 
 import {
     startMoviesSearch,
@@ -96,14 +97,6 @@ export class App extends Component {
                     />
                     <SearchResult moviesList={moviesList} />
                 </React.Fragment>
-            );
-        };
-
-        const NotFound = () => {
-            return (
-                <div className='not-found-page'>
-                    <span>404 - Not found</span>
-                </div>
             );
         };
 
