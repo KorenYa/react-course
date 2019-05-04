@@ -6,7 +6,8 @@ body {
 
 .row,
 .col-4,
-.col-8 {
+.col-8,
+.col-12 {
     box-sizing: border-box;
 }
 
@@ -18,7 +19,8 @@ body {
 }
 
 .col-4,
-.col-8 {
+.col-8,
+.col-12 {
     flex-basis: 0;
     flex-grow: 1;
     position: relative;
@@ -37,6 +39,15 @@ body {
     max-width: 66.666667%;
 }
 
+.col-12 {
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+
 .text-center {
     text-align: center;
+}
+
+.text-right {
+    text-align: right;
 }

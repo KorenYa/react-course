@@ -1,32 +1,37 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`MovieCard renders correctly 1`] = `
-<div
-  className="movie-card"
+<a
+  href="/film/undefined"
+  onClick={[Function]}
 >
   <div
-    className="text-center"
+    className="movie-card"
   >
-    <img
-      alt="Movie"
-      className="img-responsive"
-      src="poster.jpg"
-    />
-  </div>
-  <h2
-    className="movie-card__title"
-  >
-    Movie
-    <span
-      className="movie-card__date"
+    <div
+      className="text-center"
     >
-      27-03-2019
-    </span>
-  </h2>
-  <div
-    className="movie-card__genre"
-  >
-    action
+      <img
+        alt="Movie"
+        className="img-responsive"
+        src="poster.jpg"
+      />
+    </div>
+    <h2
+      className="movie-card__title"
+    >
+      Movie
+      <span
+        className="movie-card__date"
+      >
+        27-03-2019
+      </span>
+    </h2>
+    <div
+      className="movie-card__genre"
+    >
+      action
+    </div>
   </div>
-</div>
+</a>
 `;

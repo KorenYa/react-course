@@ -21,6 +21,15 @@
         padding: 8px 24px;
     }
 
+    &-back {
+        color: $red;
+        background-color: $white;
+
+        &:hover {
+            color: $white;
+        }
+    }
+
     &:hover {
         cursor: pointer;
     }

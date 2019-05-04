@@ -2,20 +2,28 @@ import React from 'react';
 import Adapter from 'enzyme-adapter-react-16';
 import renderer from 'react-test-renderer';
 import { shallow, configure } from 'enzyme';
+import { MemoryRouter } from 'react-router-dom';
 import { App } from '../App';
 
 configure({ adapter: new Adapter() });
 
 describe('App', () => {
+    const location = {
+        pathname: '*'
+    };
+
     it('renders correctly', () => {
         const tree = renderer
             .create(
-                <App
-                    moviesList={{ total: 0 }}
-                    searchQuery={'Adventure'}
-                    searchBy={'title'}
-                    sortBy={'release_date'}
-                />
+                <MemoryRouter>
+                    <App
+                        moviesList={{ total: 0 }}
+                        searchQuery={'Adventure'}
+                        searchBy={'title'}
+                        sortBy={'release_date'}
+                        location={location}
+                    />
+                </MemoryRouter>
             )
             .toJSON();
         expect(tree).toMatchSnapshot();
@@ -25,11 +33,16 @@ describe('App', () => {
     const mockUpdateSearchQuery = jest.fn();
     const mockUpdateSearchBy = jest.fn();
     const mockUpdateSortBy = jest.fn();
+    const mockClearMoviesList = jest.fn();
     const event = {
         preventDefault: jest.fn(),
         target: {
             value: 'mock'
         }
+    };
+
+    const history = {
+        push: jest.fn()
     };
     const wrapper = shallow(
         <App
@@ -41,6 +54,9 @@ describe('App', () => {
             updateSearchQuery={mockUpdateSearchQuery}
             updateSearchBy={mockUpdateSearchBy}
             updateSortBy={mockUpdateSortBy}
+            clearMoviesList={mockClearMoviesList}
+            location={location}
+            history={history}
         />
     );
     const instance = wrapper.instance();
