@@ -1,11 +1,9 @@
-@import '../../styles/constants.scss';
-
 .not-found-page {
     display: flex;
     justify-content: center;
     align-items: center;
-    color: $grey;
-    font-size: $x-lg;
-    font-weight: $bold;
+    color: #3c3c3c;
+    font-size: 60px;
+    font-weight: 600;
     height: 100vh;
 }

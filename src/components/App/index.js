@@ -17,7 +17,7 @@ import {
     clearMoviesList
 } from '../../store/AC';
 
-import '../../styles/general.scss';
+import '../../styles/general.css';
 
 export class App extends Component {
     constructor(props) {

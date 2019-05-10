@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import './status-bar.scss';
+import './status-bar.css';
 const StatusBar = function(props) {
     const noHits = <span>&nbsp;</span>;
 

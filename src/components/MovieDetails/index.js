@@ -8,7 +8,7 @@ import NotFound from '../NotFound';
 
 import { getMovieById } from '../../store/AC';
 
-import './movie-details.scss';
+import './movie-details.css';
 
 export class MovieDetails extends Component {
     constructor(props) {

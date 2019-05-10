@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import Image from '../Image';
 import PropTypes from 'prop-types';
-import './movie-card.scss';
+import './movie-card.css';
 const MovieCard = function(props) {
     return (
         <Link to={`/film/${props.id}`}>
