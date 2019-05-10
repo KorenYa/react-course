@@ -4,7 +4,7 @@ export const SEARCH_BY = 'SEARCH_BY';
 export const SORT_BY = 'SORT_BY';
 export const CLEAR_MOVIES = 'CLEAR_MOVIES';
 export const GET_MOVIE_BY_ID = 'GET_MOVIE_BY_ID';
-export const initialState = {
+export const initialStateDefault = {
     moviesList: { total: 0, data: [] },
     searchQuery: 'Adventure',
     searchBy: 'title',
