@@ -1,11 +1,11 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import Link from 'next/link';
 import Image from '../Image';
 import PropTypes from 'prop-types';
 import './movie-card.css';
 const MovieCard = function(props) {
     return (
-        <Link to={`/film/${props.id}`}>
+        <Link href={`/film/${props.id}`}>
             <div className='movie-card'>
                 <div className='text-center'>
                     <Image src={props.poster} alt={props.title} />

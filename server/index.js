@@ -9,8 +9,14 @@ app.prepare()
     .then(() => {
         const server = express();
 
-        server.get('/p/:id', (req, res) => {
-            const actualPage = '/post';
+        server.get('/search/:query', (req, res) => {
+            const actualPage = '/search';
+            const queryParams = { query: req.params.query };
+            app.render(req, res, actualPage, queryParams);
+        });
+
+        server.get('/film/:id', (req, res) => {
+            const actualPage = '/film';
             const queryParams = { id: req.params.id };
             app.render(req, res, actualPage, queryParams);
         });
