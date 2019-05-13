@@ -1,5 +1,6 @@
 import React from 'react';
 import fetch from 'isomorphic-unfetch';
+import { withRouter } from 'next/router';
 import configureStore from '../src/store';
 import { StaticRouter } from 'react-router-dom';
 import Root from '../src/Root';
@@ -11,7 +12,7 @@ const Film = props => {
         <Root
             context={context}
             Router={StaticRouter}
-            location={'/film/:filmId'}
+            location={'/film/' + store.getState().selectedMovie.id}
             store={store}
         />
     );

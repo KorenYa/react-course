@@ -12,7 +12,7 @@ const Search = props => {
             Router={StaticRouter}
             context={context}
             store={store}
-            location={'/search/:browserSearchQuery'}
+            location={'/search/' + store.getState().searchQuery}
         />
     );
 };
