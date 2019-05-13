@@ -1,23 +1,15 @@
 import React from 'react';
 import { Provider } from 'react-redux';
-import { persistStore } from 'redux-persist';
-import { PersistGate } from 'redux-persist/integration/react';
-import { BrowserRouter as Router } from 'react-router-dom';
+import { hot } from 'react-hot-loader';
 
-import store from './store';
 import App from './components/App';
 
-function Root() {
-    const persistor = persistStore(store);
-    return (
-        <Provider store={store}>
-            <PersistGate loading={null} persistor={persistor}>
-                <Router>
-                    <App />
-                </Router>
-            </PersistGate>
-        </Provider>
-    );
-}
+const Root = ({ Router, location, context, store }) => (
+    <Provider store={store}>
+        <Router location={location} context={context}>
+            <App />
+        </Router>
+    </Provider>
+);
 
-export default Root;
+export default hot(module)(Root);

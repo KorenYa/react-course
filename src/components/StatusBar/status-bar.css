@@ -1,0 +1,18 @@
+.status-bar {
+    padding: 10px 40px;
+    background-color: #f5f5f5;
+    font-weight: 600;
+}
+
+.status-bar__filters {
+    float: right;
+}
+
+.status-bar__sort {
+    cursor: pointer;
+    padding: 0 10px;
+}
+
+.status-bar__sort.active {
+    color: #f55263;
+}

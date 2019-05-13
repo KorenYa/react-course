@@ -1,6 +1,6 @@
 import * as types from '../../utils/constants';
 import reducer from '../reducer';
-import { initialState } from '../../utils/constants';
+import { initialStateDefault as initialState } from '../../utils/constants';
 
 describe('Movies reducer', () => {
     it('should return the initial state', () => {

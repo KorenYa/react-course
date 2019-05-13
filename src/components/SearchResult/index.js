@@ -1,7 +1,7 @@
 import React from 'react';
 import MovieCard from '../MovieCard';
 import PropTypes from 'prop-types';
-import './search-result.scss';
+import './search-result.css';
 const SearchResult = function(props) {
     const moviesList = props.moviesList;
 

@@ -1,0 +1,38 @@
+.btn {
+    display: inline-block;
+    font-weight: 600;
+    color: #ffffff;
+    text-align: center;
+    text-transform: uppercase;
+    vertical-align: middle;
+    user-select: none;
+    background-color: #3c3c3c;
+    font-size: 10px;
+    padding: 4px 12px;
+    line-height: 1.5;
+    border-radius: 2px;
+    border: none;
+    margin-left: 10px;
+}
+
+.btn:hover {
+    cursor: pointer;
+}
+
+.btn-lg {
+    font-size: 14px;
+    padding: 8px 24px;
+}
+
+.btn-back {
+    color: #f55263;
+    background-color: #ffffff;
+}
+
+.btn-back:hover {
+    color: #ffffff;
+}
+
+.btn:hover, .btn.active {
+    background-color: #f55263;
+}

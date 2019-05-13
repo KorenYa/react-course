@@ -4,7 +4,7 @@ import Input from '../Input';
 import Button from '../Button';
 import noop from '../../utils/noop';
 import PropTypes from 'prop-types';
-import './search-from.scss';
+import './search-from.css';
 const SearchForm = function(props) {
     return (
         <form className='search-form' onSubmit={props.handleSubmit}>

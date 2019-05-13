@@ -1,0 +1,30 @@
+.movie-details {
+    padding: 60px 20px;
+    background: url('https://assets.nflxext.com/ffe/siteui/vlv3/a27b8244-8c0b-4db4-984e-0cd57daa489d/8e38e13b-8cfc-410e-8d2d-a6c9e717d9b8/UA-en-20190506-popsignuptwoweeks-perspective_alpha_website_large.jpg') center center;
+    color: #ffffff;
+}
+
+.movie-details__title {
+    font-size: 18px;
+    font-weight: 600;
+    color: #f55263;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.movie-details__tagline {
+    font-size: 14px;
+    font-weight: 400;
+    padding: 10px 0;
+}
+
+.movie-details__date, .movie-details__runtime {
+    font-weight: 600;
+    padding-right: 15px;
+}
+
+.movie-details__overview {
+    font-size: 14px;
+    font-weight: 400;
+    padding-top: 20px;
+}

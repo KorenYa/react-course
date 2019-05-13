@@ -1,12 +1,11 @@
-@import '../../styles/constants.scss';
 .input {
     display: block;
     width: 100%;
     margin-bottom: 20px;
-    background-color: $black;
+    background-color: #000000;
     border: none;
-    border-bottom: 1px solid $red;
+    border-bottom: 1px solid #f55263;
     padding: 10px;
-    color: $white;
+    color: #ffffff;
     box-sizing: border-box;
 }
