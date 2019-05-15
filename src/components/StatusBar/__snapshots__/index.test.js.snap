@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`StatusBar renders correctly 1`] = `
+exports['StatusBar renders correctly 1'] = `
 <div
   className="status-bar"
 >

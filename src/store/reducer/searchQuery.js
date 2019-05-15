@@ -1,12 +1,13 @@
 import { SEARCH_QUERY } from '../../utils/constants';
 
 export default (deafultSearchQuery = 'Adventure', action) => {
-    const { type, searchQuery } = action;
+  const { type, searchQuery } = action;
 
-    switch (type) {
-        case SEARCH_QUERY:
-            return searchQuery;
-    }
+  switch (type) {
+    case SEARCH_QUERY:
+      return searchQuery;
 
-    return deafultSearchQuery;
+    default:
+      return deafultSearchQuery;
+  }
 };

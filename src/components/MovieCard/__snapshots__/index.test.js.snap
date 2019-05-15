@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`MovieCard renders correctly 1`] = `
+exports['MovieCard renders correctly 1'] = `
 <a
   href="/film/undefined"
   onClick={[Function]}
