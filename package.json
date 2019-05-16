@@ -20,7 +20,9 @@
     "lint": "eslint --ext .jsx,.js src/",
     "test": "jest /src",
     "test:coverage": "jest /src --collect-coverage",
-    "test:e2e": "cypress open"
+    "test:e2e": "cypress open",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
   },
   "browserslist": [
     ">0.2%",
@@ -59,7 +61,11 @@
     "sass-loader": "^7.1.0",
     "webpack": "^4.29.6",
     "webpack-cli": "^3.3.0",
-    "webpack-dev-server": "^3.2.1"
+    "webpack-dev-server": "^3.2.1",
+    "@storybook/react": "^5.0.11",
+    "@storybook/addon-actions": "^5.0.11",
+    "@storybook/addon-links": "^5.0.11",
+    "@storybook/addons": "^5.0.11"
   },
   "jest": {
     "moduleNameMapper": {
