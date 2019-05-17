@@ -6,9 +6,9 @@ import sortBy from './sortBy';
 import selectedMovie from './selectedMovie';
 
 export default combineReducers({
-    moviesList,
-    searchQuery,
-    searchBy,
-    sortBy,
-    selectedMovie
+  moviesList,
+  searchQuery,
+  searchBy,
+  sortBy,
+  selectedMovie,
 });

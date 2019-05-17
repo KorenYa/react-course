@@ -1,3 +1,3 @@
 export default function noop() {
-    return false;
+  return false;
 }
