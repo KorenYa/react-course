@@ -13,7 +13,8 @@
     "react-router-dom": "^5.0.0",
     "redux": "^4.0.1",
     "redux-persist": "^5.11.0-alpha",
-    "style-loader": "^0.23.1"
+    "style-loader": "^0.23.1",
+    "styled-components": "^4.2.0"
   },
   "scripts": {
     "start": "webpack-dev-server --config webpack.config.js --open --mode development",
