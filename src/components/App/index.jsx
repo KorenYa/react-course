@@ -17,6 +17,13 @@ import {
   clearMoviesList,
 } from '../../store/AC';
 
+import {
+  getMoviesList,
+  getSearchQuery,
+  getSearchBy,
+  getSortBy,
+} from '../../store/selectors';
+
 import '../../styles/general.scss';
 
 export class App extends Component {
@@ -127,10 +134,10 @@ export class App extends Component {
 export default withRouter(
   connect(
     state => ({
-      moviesList: state.moviesList,
-      searchQuery: state.searchQuery,
-      searchBy: state.searchBy,
-      sortBy: state.sortBy,
+      moviesList: getMoviesList(state),
+      searchQuery: getSearchQuery(state),
+      searchBy: getSearchBy(state),
+      sortBy: getSortBy(state),
     }),
     {
       startMoviesSearch,
